@@ -1,0 +1,35 @@
+git clone
+git fetch --all
+git branch -a
+
+	* main
+  	remotes/origin/develop
+  	remotes/origin/hotfix
+  	remotes/origin/main
+  	remotes/origin/release
+
+git switch -c develop origin/develop
+git checkout -b develop origin/develop
+git branch
+
+	* develop
+  	main
+
+git switch develop
+git pull
+git switch -c feature/login
+
+others: git switch -c feature/cart
+	git switch -c feature/admin
+	git switch -c feature/dog
+
+git add .
+git commit -m "Add login feature"
+git push -u origin feature/login
+
+	feature/login -> develop
+	Team lead/reviewer approve rồi merge.
+
+♥ Mọi người cập nhật Develop mới nhất.
+git switch develop
+git pull
